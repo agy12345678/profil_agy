@@ -1,0 +1,198 @@
+/* PENGATURAN DASAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #eeeeee;
+    color: #444;
+}
+
+/* HEADER */
+header {
+    background-color: #77717a;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #ffd1df;
+    font-size: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffc0d4;
+}
+
+/* BERANDA */
+.hero {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    padding: 50px 10%;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero-content h2 {
+    color: #d47798;
+    font-size: 25px;
+}
+
+.hero-content h1 {
+    color: #bd6687;
+    font-size: 40px;
+    margin: 15px 0;
+}
+
+.hero-content p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.btn {
+    background-color: #d889a5;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    background-color: #b86d89;
+}
+
+/* TENTANG SAYA */
+.about {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.about h2,
+.contact h2 {
+    color: #bd6687;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+.profile-card {
+    background-color: #ffffff;
+    max-width: 550px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #edc1d0;
+    box-shadow: 0 4px 15px #00000015;
+}
+
+/* FOTO PROFIL */
+.profile-image {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #e5a6bd;
+    box-shadow: 0 0 12px #e5a6bd;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-card h3 {
+    color: #bd6687;
+    margin-bottom: 10px;
+}
+
+.profile-card table {
+    margin: 25px auto;
+    text-align: left;
+}
+
+.profile-card td {
+    padding: 8px;
+}
+
+.description {
+    line-height: 1.7;
+    text-align: justify;
+}
+
+/* KONTAK */
+.contact {
+    padding: 60px 10%;
+    text-align: center;
+    min-height: 75vh;
+}
+
+.contact-card {
+    background-color: white;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #edc1d0;
+    box-shadow: 0 4px 15px #00000015;
+    text-align: left;
+}
+
+.contact-card h3 {
+    color: #bd6687;
+    margin-bottom: 20px;
+}
+
+.contact-card p {
+    margin-bottom: 15px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #77717a;
+    color: #ffd1df;
+    text-align: center;
+    padding: 18px;
+    margin-top: 30px;
+}
+table{
+    text-align: left;
+}
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+}
